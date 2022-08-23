@@ -2,18 +2,31 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>Creeptee</title>
+        <link rel='stylesheet' href=" {{ asset('styles/main.css') }}"
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
-        {% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
-        {% endblock %}
-
-        {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
-        {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <header>
+            <div class="account-block">
+                <button>Connexion</button>
+                <button>Inscription</button>
+            </div>
+            <nav class="nav-block">
+                <ul class="nav-ul">
+                    <li>Accueil</li>|
+                    <li>Jeux</li>|
+                    <li>Contact</li>
+                </ul>
+            </nav>
+
+        </header>
+            {% block content %}
+            {% endblock %}
+        </main>
+
+        <footer>
+        FOOTER A VENIR 
+        </footer>
     </body>
 </html>
