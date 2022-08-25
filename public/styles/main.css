@@ -94,7 +94,7 @@ main {
 }
 
 .hero-home {
-    height: 70vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,6 +112,24 @@ main {
 .text h1 {
     font-size: var(--font-M);
 }
+
+.games-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.game-items {
+    width: 150px;
+    height: 150px;
+    background-color: #1E272E;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.418);
+    margin: 10px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 footer {
     background-color: white;
     position: fixed;
