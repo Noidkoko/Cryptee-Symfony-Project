@@ -10,7 +10,9 @@ class HomeController extends AbstractController
 {
     #[Route('/', name: 'home')]
     public function index(): Response
-    {
+    {   
+        // $games = ;
+
         return $this->render('home/index.html.twig');
     }
 }

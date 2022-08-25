@@ -1,8 +1,8 @@
 /* CSS Variables */
 :root {
-    --main-color: #34ace0;
+    --main-color: #1e272e;
     --second-color: white;
-    --dark-color: #333;
+    --font-color: #333;
     
     --font-XL: 34px;
     --font-L: 30px;
@@ -33,9 +33,10 @@ header, main, footer {
 
 header {
     background-color: white;
+    position: fixed;
+    top: 0;
     height: auto;
-    margin: 20px;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,6 +50,7 @@ header .nav-ul, header .account-block {
     list-style-type: none;
     padding: 10px;
     font-size: var(--font-S);
+    color: var(--font-color);
 }
 
 header .nav-ul li, header .account-block button {
@@ -91,20 +93,12 @@ main {
     justify-content: center;
 }
 
-.hero {
+.hero-home {
     height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.hero img {
-    width: 30%;
-    margin: 20px;
-}
-iframe {
-    border: none;
-    border-radius: 300px;
 }
 
 .container  {
@@ -117,4 +111,18 @@ iframe {
 }
 .text h1 {
     font-size: var(--font-M);
+}
+footer {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    height: 5vh;
+    font-size: var(--font-M);
+    color: var(--font-color);
+    border-radius: 10px 10px 0 0;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
