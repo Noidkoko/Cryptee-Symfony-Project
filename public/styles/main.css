@@ -33,8 +33,6 @@ header, main, footer {
 
 header {
     background-color: white;
-    position: fixed;
-    top: 0;
     height: auto;
     border-radius: 0 0 10px 10px;
     display: flex;
