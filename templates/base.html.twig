@@ -4,18 +4,18 @@
         <meta charset="UTF-8">
         <title>Creeptee</title>
         <link rel='stylesheet' href=" {{ asset('styles/main.css') }}">
-        <link rel='stylesheet' href=" {{ asset('styles/form.css') }}">
+        <link rel='stylesheet' href=" {{ asset('styles/register.css') }}">
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
     </head>
     <body>
         <header>
             <div class="account-block">
                 <button>Connexion</button>
-                <button>Inscription</button>
+                <a href="{{ path('register') }} "><button>Inscription</button></a>
             </div>
             <nav class="nav-block">
                 <ul class="nav-ul">
-                    <li>Accueil</li>|
+                    <li><a href="{{ path('home') }} ">Accueil</a></li>|
                     <li>Jeux</li>|
                     <li>Contact</li>
                 </ul>

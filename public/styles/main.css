@@ -11,7 +11,10 @@
     --font-XS: 15px;
 }
 
-
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
 *, ::before, ::after {
     box-sizing: border-box;
@@ -65,7 +68,7 @@ header .account-block button {
     color: var(--main-color);
     display: flex;
     font-family: Phantomsans, sans-serif;
-    font-size: var(--font-S);
+    font-size: var(--font-XS);
     justify-content: center;
     line-height: 1em;
     max-width: 100%;
@@ -74,6 +77,8 @@ header .account-block button {
     text-decoration: none;
     cursor: pointer;
     transition: .4s;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 header .account-block button:hover {
