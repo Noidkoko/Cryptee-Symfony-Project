@@ -53,7 +53,6 @@ header {
     top: 0;
     background-color: var(--main-color);
     width: 100vw;
-    font-family: var(--ff-secondary);
     z-index: 999;
 }
 header .account-block {
@@ -65,11 +64,12 @@ header .nav-ul, header h1, header .account-block {
     align-items: center;
     list-style-type: none;
     padding: 10px;
-    font-size: var(--font-M);
+    font-size: var(--font-S);
     color: var(--font-color);
 }
 header .nav-ul {
-    margin-right: 130px;
+    margin-right: 80px;
+    font-family: var(--ff-primary);
 }
 header .nav-ul li:not(:nth-child(3)) {
     border-right: 2px solid var(--second-color);
@@ -129,7 +129,7 @@ main {
     align-items: center;
 }
 .hero-home {
-    height: 65vh;
+    height: 70vh;
     width: 75%;
     display: grid;
     grid-template-columns: 70% 30%;
@@ -149,19 +149,31 @@ main {
     border-radius: 50%;
     width: 400px;
 }
-.feature-home {
-    height: 90vh;
+.feature-home, .feature2-home {
     width: 100vw;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 15px;
 }
+.feature-home {
+    flex-direction: column;
+    height: 90vh;
+}
 .feature-home h1 {
+    color: var(--main-color);
+}
+.feature2-home h1 {
+    color:var(--font-color);
+}
+.feature-home h1, .feature2-home h1 {
     width: 60%;
     text-align: center;
-    color: var(--main-color);
+    margin: 20px;
+}
+.feature2-home {
+    height: 50vh;
+    background-color: var(--main-color);
 }
 footer {
     position: sticky;
