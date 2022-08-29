@@ -4,48 +4,21 @@
 
 {% block content %}
             <main>
-            <div class="hero-home">
-                <h1>
-                Welcome to Creeptee
-                </h1>
-                <h3>Play basics games, make bigger gains</h3>
-            </div>
-            <div class="games-container">
-                <div class="game-items">
-                    <h1>Titre</h1>
+                <div class="overlay">
+                                <div class="hero-home">
+                    <div class="title">
+                    <h1>Play basics games, make bigger gains</h1>
+                    <p>Jouez et remportez de vrais gains, pas ceux qui font les mythos !</p>
+                    </div>
+                    <img src="{{ asset('src/icon/gaming-icon.gif') }}" alt="presentation">
                 </div>
-                <div class="game-items">
-                    <h1>Titre</h1>
                 </div>
-                <div class="game-items">
-                    <h1>Titre</h1>
-                </div>
-                <div class="game-items">
-                    <h1>Titre</h1>
-                </div>
-                <div class="game-items">
-                    <h1>Titre</h1>
-                </div>
-                <div class="game-items">
-                    <h1>Titre</h1>
-                </div>
-                <div class="game-items">
-                    <h1>Titre</h1>
-                </div>
-                <div class="game-items">
-                    <h1>Titre</h1>
-                </div>
-                <div class="game-items">
-                    <h1>Titre</h1>
-                </div>
-                <div class="game-items">
-                    <h1>Titre</h1>
-                </div>
-                {# {{ for game in games }}
+                <div class="feature-home">
 
-                    <div class="game-case">
-                        <img src="{{ path(game.url) }}" alt='game case'>
-                        <h1>{{ game.name }}</h1>
-                    </div> #}
-            </div>
+                    <h1>Génerez des revenues en jouant à des jeux simples,
+                    augmenter vos gains avec des équipements à collectionner
+                    et devenez le meilleur parmis le classement mondial établi !</h1>
+
+                    <img src="{{ asset('src/icon/feature-icon.gif') }}" alt="presentation">
+                </div>
 {% endblock %}

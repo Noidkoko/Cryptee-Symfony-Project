@@ -1,15 +1,22 @@
 /* CSS Variables */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Silkscreen&display=swap');
+
 :root {
-    --main-color: #232044;
-    --second-color: #f1f1f146;
+    --main-color: #2A2A3B;
+    --second-color: #F09666;
     --font-color: #FFF;
-    --button-color: #FFBB56;
-    
+    --button-color: #f09666;
+
+    --ff-primary: 'Silkscreen', cursive;
+    --ff-secondary: 'Roboto', sans-serif;
     --font-XL: 34px;
     --font-L: 30px;
     --font-M: 26px;
     --font-S: 20px;
     --font-XS: 15px;
+}
+h1, h2, h3, h4 {
+    font-family: var(--ff-primary);
 }
 
 a {
@@ -24,15 +31,12 @@ a {
 }
 
 body {
-    background-color: var(--main-color);
-    background: url('assets/bg-main.jpg');
-    background-position: center;
-    background-size: cover;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    overflow-x: hidden;
 }
 
 header, main, footer {
@@ -40,47 +44,58 @@ header, main, footer {
 }
 
 header {
-    background-color: var(--second-color);
     height: auto;
-    border-radius: 0 0 10px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.363);
-    position: fixed;
+    position: sticky;
     top: 0;
+    background-color: var(--main-color);
+    width: 100vw;
+    font-family: var(--ff-secondary);
+    z-index: 999;
 }
-header .nav-ul, header .account-block {
+header .account-block {
+        margin-left: 130px;
+}
+header .nav-ul, header h1, header .account-block {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style-type: none;
     padding: 10px;
-    font-size: var(--font-S);
+    font-size: var(--font-M);
     color: var(--font-color);
 }
+header .nav-ul {
+    margin-right: 130px;
+}
+header .nav-ul li:not(:nth-child(3)) {
+    border-right: 2px solid var(--second-color);
+}
+header .nav-ul li {
+    padding: 0 20px 0 20px;
+}
 
-header .nav-ul li, header .account-block button {
+header .account-block button {
     margin: 10px;
 }
 
 header .account-block button {
-    padding: 5px;
     align-items: center;
     border: 2px solid var(--button-color);
-    background-color: var(--button-color);
-    border-radius: 8px;
+    background-color: var(--second-color);
+    border-radius: 2px;
     box-shadow: rgba(151, 65, 252, 0.2) 0 0px 3px -5px;
-    color: var(--main-color);
+    color: var(--font-color);
     display: flex;
     font-family: Phantomsans, sans-serif;
     font-size: var(--font-XS);
     justify-content: center;
     line-height: 1em;
-    max-width: 100%;
-    min-width: 140px;
-    padding: 12px;
+    padding: 10px 25px;
+    letter-spacing: .02em;
     text-decoration: none;
     cursor: pointer;
     transition: .4s;
@@ -101,48 +116,55 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
 
+}
+.overlay {
+    width: 100vw;
+    clip-path: polygon(0 0,100% 0,100% 90%,0 100%);
+    background-color: var(--main-color);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .hero-home {
-    height: 30vh;
+    height: 65vh;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+}
+.hero-home .title h1 {
+    font-size: 55px;
+    font-weight: bold;
+    width: 80%;
+}
+.hero-home p {
+    margin-top: 15px;
+    width: 95%;
+    font-size: var(--font-M)
+}
+.hero-home img {
+    border-radius: 50%;
+    width: 400px;
+}
+.feature-home {
+    height: 90vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 15px;
 }
-
-.container  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.feature-home h1 {
+    width: 60%;
+    text-align: center;
+    color: var(--main-color);
 }
-.text {
-    width: 50vw;
-}
-.text h1 {
-    font-size: var(--font-M);
-}
-
-.games-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
-.game-items {
-    width: 150px;
-    height: 150px;
-    background-color: #1E272E;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.418);
-    margin: 10px;
-    border-radius: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
 footer {
-    background-color: var(--second-color);
-    position: fixed;
+    position: sticky;
     bottom: 0;
     height: 5vh;
     font-size: var(--font-S);

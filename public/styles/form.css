@@ -1,9 +1,9 @@
-.form-registration h1 {
+.form h1 {
     color: var(--font-color);
 }
 
-.form-registration {
-    background-color: var(--second-color);
+.form {
+    background-color: var(--main-color);
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -12,6 +12,12 @@
     border-radius: 15px;
     padding: 100px;
     margin: 50px;
+    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.226);
+    transition: .8s;
+}
+.form:hover {
+    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.226);
+    transition: .8s;
 }
 .form-group {
     display: flex;
@@ -21,7 +27,7 @@
     padding: 5px;
 }
 .form-group * {
-    margin: 6px;
+    margin: 12px;
 }
 form input {
     padding: 10px;
@@ -38,17 +44,17 @@ form input {
     padding: 10px;
     align-items: center;
     border: 2px solid var(--button-color);
-    background-color: var(--button-color);
+    background-color: var(--main-color);
     border-radius: 8px;
     box-shadow: rgba(151, 65, 252, 0.2) 0 0px 3px -5px;
-    color: var(--main-color);
+    color: var(--button-color);
     display: flex;
     font-family: Phantomsans, sans-serif;
     font-size: var(--font-S);
     justify-content: center;
     line-height: 1em;
     max-width: 100%;
-    min-width: 140px;
+    min-width: 200px;
     padding: 20px;
     text-decoration: none;
     cursor: pointer;
