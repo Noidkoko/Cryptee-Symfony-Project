@@ -15,7 +15,7 @@
     --font-S: 20px;
     --font-XS: 15px;
 }
-h1, h2, h3, h4 {
+* {
     font-family: var(--ff-primary);
 }
 
