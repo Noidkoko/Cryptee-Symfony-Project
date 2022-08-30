@@ -1,11 +1,14 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}
+
   Connexion - Creeptee
 {% endblock %}
 
 {% block content %}
-  <div class="form">
+<link rel='stylesheet' href=" {{ asset('styles/form.css') }}">
+  <div class="form-page">
+      <div class="form">
     <h1>
       Connectez vous
     </h1>
@@ -63,4 +66,5 @@
       </div>
     </form>
   </div>
+    </div>
 {% endblock %}

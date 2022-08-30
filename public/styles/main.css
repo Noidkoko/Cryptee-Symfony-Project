@@ -182,22 +182,42 @@ main {
     border-radius: 50%;
 }
 .feature4-home {
-    display: flex;
-    flex-direction: row;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
 }
-
-
-footer {
-    position: sticky;
-    bottom: 0;
-    height: 5vh;
-    font-size: var(--font-S);
-    color: var(--font-color);
-    border-radius: 10px 10px 0 0;
-    padding: 20px;
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color);
+}
+.testimonial-card img {
+    width: 50%;
+    border-radius: 50%;
+}
+.testimonial-card div {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.testimonial-card div p {
+    width: 70%;
+}
+.testimonial-card div span {
+    font-size: 50px;
+}
+footer {
+    height: 10vh;
+    width: 100vw;
+    font-size: var(--font-S);
+    color: var(--font-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--main-color);
 }

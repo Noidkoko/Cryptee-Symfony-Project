@@ -1,6 +1,10 @@
 .form h1 {
     color: var(--font-color);
 }
+body {
+    background-color: var(--main-color);
+    
+}
 
 .form {
     background-color: var(--main-color);
