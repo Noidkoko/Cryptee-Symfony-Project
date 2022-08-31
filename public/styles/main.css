@@ -44,7 +44,7 @@ header, main, footer {
 }
 
 header {
-    height: auto;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,10 +55,10 @@ header {
     width: 100vw;
     z-index: 999;
 }
-header .account-block {
+header .account-buttons {
         margin-left: 130px;
 }
-header .nav-ul, header h1, header .account-block {
+header .nav-ul, header h1, header .account-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,11 +78,11 @@ header .nav-ul li {
     padding: 0 20px 0 20px;
 }
 
-header .account-block button {
+header .account-buttons button {
     margin: 10px;
 }
 
-header .account-block button {
+header .account-buttons button {
     align-items: center;
     border: 2px solid var(--button-color);
     background-color: var(--second-color);
@@ -103,7 +103,7 @@ header .account-block button {
     font-weight: bold;
 }
 
-header .account-block button:hover {
+header .account-buttons button:hover {
     background-color: var(--main-color);
     color: var(--font-color);
     transition: .3s;
@@ -210,8 +210,48 @@ main {
 .testimonial-card div span {
     font-size: 50px;
 }
+.account-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 70vh;
+}
+
+.account-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 90%;
+
+}
+.user-card {
+    width: 80%;
+    font-size: var(--font-L);
+    margin: 30px;
+    padding: 50px;
+}
+.user-info {
+    display: flex;
+}
+.user-info img {
+    border-radius: 50%;
+}
+
+.menu-card {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.356);
+    border-radius: 5px;
+    padding: 15px;
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+}
+
 footer {
-    height: 10vh;
+    height: 20vh;
     width: 100vw;
     font-size: var(--font-S);
     color: var(--font-color);

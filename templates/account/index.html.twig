@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+  Mon compte - Creeptee
+{% endblock %}
+
+{% block content %}
+  <div class="account-page">
+    <h1>
+      Mon compte
+    </h1>
+    <div class="account-container">
+      <div class="user-card">
+        <img src="" alt="photo de profil" />
+        <h1>
+          {{ app.user.username }}
+        </h1>
+      </div>
+      <div class="menu-card">
+        <h1>
+          Todo list
+        </h1>
+        <p>
+          1. Changer le mot de passe
+        </p>
+        <p>
+          2. Consulter mon classement
+        </p>
+        <p>
+          3. Mon Wallet
+        </p>
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -1,13 +1,12 @@
-.form h1 {
-    color: var(--font-color);
-}
 body {
     background-color: var(--main-color);
     
 }
-
+.form h1, .form label, .form p, .form input {
+    color: var(--main-color);    
+}
 .form {
-    background-color: var(--main-color);
+    background-color: white;
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -36,13 +35,9 @@ body {
 form input {
     padding: 10px;
     width: 40vw;
-    color: var(--main-color);
     border-radius: 5px;
     border: none;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.301);
-}
-.form-group label {
-    color: var(--font-color);
 }
 .form-group button {
     padding: 10px;
