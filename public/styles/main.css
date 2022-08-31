@@ -71,10 +71,10 @@ header .nav-ul {
     margin-right: 80px;
     font-family: var(--ff-primary);
 }
-header .nav-ul li:not(:nth-child(3)) {
+header .nav-ul li:not(:nth-child(3)), .footer-container ul li:not(:nth-child(3)) {
     border-right: 2px solid var(--second-color);
 }
-header .nav-ul li {
+header .nav-ul li, .footer-container ul li {
     padding: 0 20px 0 20px;
 }
 
@@ -174,7 +174,7 @@ main {
 .feature2-home {
     height: 60vh;
     background-color: var(--main-color);
-    clip-path: polygon(0 0,100% 10%,100% 80%,0 100%);
+    clip-path: polygon(0 0,100% 20%,100% 100%,0 100%);
 
 }
 .feature2-home img {
@@ -182,7 +182,7 @@ main {
     border-radius: 50%;
 }
 .feature4-home {
-    height: 50vh;
+    height: 80vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
@@ -203,9 +203,14 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    margin: 0px 20px 0px 20px;
+    padding: 10px;
 }
 .testimonial-card div p {
     width: 70%;
+    margin-left: 20px;
 }
 .testimonial-card div span {
     font-size: 50px;
@@ -250,6 +255,11 @@ main {
     height: 50%;
 }
 
+.footer-container ul {
+    display: flex;
+    list-style-type: none;
+}
+
 footer {
     height: 20vh;
     width: 100vw;
@@ -260,4 +270,5 @@ footer {
     justify-content: space-around;
     align-items: center;
     background-color: var(--main-color);
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
 }
