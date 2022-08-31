@@ -31,7 +31,6 @@ a {
 }
 
 body {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,11 +121,10 @@ main {
     width: 100vw;
     clip-path: polygon(0 0,100% 0,100% 90%,0 100%);
     background-color: var(--main-color);
-    background-position: center;
-    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 90vh;
 }
 .hero-home {
     height: 70vh;
