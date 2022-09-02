@@ -3,6 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>Creeptee</title>
+        <script src="https://kit.fontawesome.com/a007022969.js" crossorigin="anonymous"></script>
+        <script src="{{ asset('app.js') }}" defer></script>
+        </script>
         <link rel='stylesheet' href=" {{ asset('styles/main.css') }}">
         <link rel='stylesheet' href=" {{ asset('styles/queries.css') }}">
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
@@ -10,7 +13,7 @@
     <body>
         <header>
             <div class="client">
-            <div class="menu-client"><a href='#' id="icon"><img src='' alt="espace-client"></div>
+            <div class="menu-client"><a href='#' id="icon"><i class="fa-icon fa-2x fa-solid fa-user"></i><a/></div>
                 {% if app.user %}
                 <div class="account-buttons"><a href="{{ path('logout') }} "><button>Deconnexion</button></a></div>
                 <div class="user-info">
@@ -25,6 +28,7 @@
             <h1>Creeptee</h1>
             {% endif %}
             <nav class="nav-block">
+                <div class="burger-container"><a href='#' id="burger"><i class="fa-icon fa-3x fa-solid fa-caret-down"></i></a></div>
                 <ul class="nav-ul">
                     <li><a href="{{ path('home') }} ">Accueil</a></li>
                     {% if app.user %}
@@ -45,7 +49,7 @@
                 <h2>Creeptee Ⓒ Noidkoko</h2>
             </div>
             <div class="footer-container">
-                <ul>
+                <ul class="footer-ul">
                     <li>Mentions légales</li>
                     <li>Forum</li>
                     <li>Contact</li>

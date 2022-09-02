@@ -2,7 +2,6 @@
     header .account-buttons {
         margin-left: 30px;
     }
-
     .hero-home {
         display: flex;
         flex-direction: column;
@@ -20,7 +19,7 @@
         width: 100%;
     }
     .hero-home img {
-
+        width: 60%;
         margin: 40px;
     }
     .feature-home {
@@ -38,15 +37,55 @@
     .feature4-home img {
         width: 40%;
     }
-}
-@media screen and (max-width: 850px) {
-    header .client .menu-client {
-        display: block;
-        margin: 40px;
+    header {
+        justify-content: center;
+        padding: 20px;
     }
-    header .account-buttons {
+    header .fa-icon {
+        display: block;
+    }
+    .account-buttons {
         display: none;
-}
+    }
+    .nav-ul {
+        display: none;
+    }
+    .burger-container, .menu-client {
+        margin: 60px;
+    }
+    .client {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header .fa-icon {
+        color: white;
+    }
+    footer {
+        padding: 50px;
+        height: auto;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .client-menu-active {
+        display: flex;
+        
+    }
+    .menu-client-active {
+        margin: 20px;
+    }
+    .header-active {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .burger-container-inactive {
+        display: none;
+    }
+    .menu-client-inactive {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -72,11 +111,30 @@
     .feature4-home {
         padding: 10px;
     }
+    .testimonial-card div {
+        border-bottom: none;
+    }
     .testimonial-card div span {
         display: none;
     }
     .testimonial-card {
         text-align: center;
         margin: 50px;
+    }
+    .footer-container ul {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 30px;
+    }
+    header .nav-ul li:not(:nth-child(5)), .footer-container ul li:not(:nth-child(4)) {
+        border-right: none;
+        border-bottom: 1px solid orange;
+    }
+    .footer-container ul li {
+        margin: 10px;
+    }
+    .footer-container h2 {
+        font-size: var(--font-M);
     }
 }
