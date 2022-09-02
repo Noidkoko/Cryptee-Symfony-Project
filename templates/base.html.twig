@@ -27,8 +27,11 @@
             <nav class="nav-block">
                 <ul class="nav-ul">
                     <li><a href="{{ path('home') }} ">Accueil</a></li>
-                    <li>Jeux</li>
+                    {% if app.user %}
+                    <li><a href="{{ path('game') }} ">Jeux</a></li>
+                    {% endif %}
                     <li>Contact</li>
+                    <li>Qui sommes-nous ?</li>
                 </ul>
             </nav>
 
