@@ -9,15 +9,18 @@
     </head>
     <body>
         <header>
-            {% if app.user %}
-            <div class="account-buttons"><a href="{{ path('logout') }} "><button>Deconnexion</button></a></div>
-            <div class="user-info">
-                <a href="{{ path('account') }}" ><img src="" alt="pp"><h1>{{ app.user.username }}</h1></a>
-            </div>
-            {% else %}
-            <div class="account-buttons">
-                <a href="{{ path('login') }} "><button>Connexion</button></a>
-                <a href="{{ path('register') }} "><button>Inscription</button></a>
+            <div class="client">
+            <div class="menu-client"><a href='#' id="icon"><img src='' alt="espace-client"></div>
+                {% if app.user %}
+                <div class="account-buttons"><a href="{{ path('logout') }} "><button>Deconnexion</button></a></div>
+                <div class="user-info">
+                    <a href="{{ path('account') }}" ><img src="" alt="pp"><h1>{{ app.user.username }}</h1></a>
+                </div>
+                {% else %}
+                <div class="account-buttons">
+                    <a href="{{ path('login') }} "><button>Connexion</button></a>
+                    <a href="{{ path('register') }} "><button>Inscription</button></a>
+                </div>
             </div>
             <h1>Creeptee</h1>
             {% endif %}

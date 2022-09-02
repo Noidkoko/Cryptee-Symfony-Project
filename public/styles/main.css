@@ -76,6 +76,9 @@ header .nav-ul li:not(:nth-child(3)), .footer-container ul li:not(:nth-child(3))
 header .nav-ul li, .footer-container ul li {
     padding: 0 20px 0 20px;
 }
+header .client .menu-client {
+    display: none;
+}
 
 header .account-buttons button {
     margin: 10px;

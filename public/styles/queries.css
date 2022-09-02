@@ -1,4 +1,8 @@
 @media screen and (max-width: 1000px) {
+    header .account-buttons {
+        margin-left: 30px;
+    }
+
     .hero-home {
         display: flex;
         flex-direction: column;
@@ -35,7 +39,15 @@
         width: 40%;
     }
 }
-
+@media screen and (max-width: 850px) {
+    header .client .menu-client {
+        display: block;
+        margin: 40px;
+    }
+    header .account-buttons {
+        display: none;
+}
+}
 
 @media screen and (max-width: 650px) {
     .hero-home .title h1 {
