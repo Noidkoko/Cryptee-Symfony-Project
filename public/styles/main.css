@@ -70,7 +70,7 @@ header .nav-ul {
     margin-right: 80px;
     font-family: var(--ff-primary);
 }
-header .nav-ul li:not(:nth-child(3)), .footer-container ul li:not(:nth-child(3)) {
+header .nav-ul li:not(:nth-child(4)), .footer-container ul li:not(:nth-child(3)) {
     border-right: 2px solid var(--second-color);
 }
 header .nav-ul li, .footer-container ul li {
@@ -252,6 +252,29 @@ main {
     justify-content: space-around;
     height: 50%;
 }
+.games-page h1 {
+    margin: 40px;
+}
+
+.games-page {
+    padding: 80px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.game-item {
+    height: 400px;
+    width: 400px;
+    background-color: #333;
+    margin: 20px;
+    border-radius: 20px;
+}
+.games-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
 
 .footer-container ul {
     display: flex;
