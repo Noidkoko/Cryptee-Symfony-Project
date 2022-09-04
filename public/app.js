@@ -1,4 +1,6 @@
 let header = document.querySelector('header')
+let burger = document.querySelector('#burger')
+let user = document.querySelector('#icon')
 
 let client_buttons = document.querySelector('.account-buttons')
 let client_menu = document.querySelector('.menu-client')
@@ -13,11 +15,13 @@ let client_button = document.querySelector('#icon').addEventListener('click', ()
     header.classList.toggle('header-active')
     client_menu.classList.toggle('menu-client-active')
     feature_menu.classList.toggle('burger-container-inactive')
+    user.classList.toggle('fa-user-active')
 })
 let menu_button = document.querySelector('#burger').addEventListener('click', () => {
     feature_content.classList.toggle('nav-ul-active')
     header.classList.toggle('header-active')
     client_menu.classList.toggle('menu-client-inactive')
     feature_menu.classList.toggle('burger-container-active')
+    burger.classList.toggle('fa-burger-active')
 })
 

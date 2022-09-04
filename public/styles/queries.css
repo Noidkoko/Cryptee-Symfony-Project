@@ -44,13 +44,25 @@
     header .fa-icon {
         display: block;
     }
+    header .fa-burger-active {
+        transform: rotate(180deg);
+        transition: .5s;
+    }
+    header .fa-user-active {
+        transform: rotateY(180deg);
+        transition: .5s;
+    }
+    
     .account-buttons {
         display: none;
     }
     .nav-ul {
         display: none;
     }
-    .burger-container, .menu-client {
+    .burger-container {
+        margin: 60px;
+    }
+    .menu-client {
         margin: 60px;
     }
     .client {
@@ -86,9 +98,32 @@
     .menu-client-inactive {
         display: none;
     }
+    .nav-ul-active {
+        display: flex;
+        margin: 0;
+    }
+    .burger-container-active {
+        margin: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }    
 }
 
 @media screen and (max-width: 650px) {
+    header .nav-ul {
+        margin-right: 0;
+    }
+    header .nav-ul li {
+        margin: 5px;
+        padding: 5px;
+    }
+    .nav-ul-active {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .hero-home .title h1 {
         font-size: 40px;
     }
@@ -129,10 +164,11 @@
     }
     header .nav-ul li:not(:nth-child(5)), .footer-container ul li:not(:nth-child(4)) {
         border-right: none;
-        border-bottom: 1px solid orange;
+        border-bottom: 1px solid #F09666;
     }
     .footer-container ul li {
-        margin: 10px;
+        margin: 5px;
+        padding: 5px;
     }
     .footer-container h2 {
         font-size: var(--font-M);
