@@ -11,7 +11,7 @@ class Food {
 
     draw() {
         let food = new Image()
-        food.src = 'Pomme.webp'
+        food.src = './food.png'
         ctx.drawImage(food, this.x * this.size, this.y * this.size, this.size, this.size)
     }
 }
