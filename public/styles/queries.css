@@ -59,12 +59,7 @@
     .nav-ul {
         display: none;
     }
-    .burger-container {
-        margin: 60px;
-    }
-    .menu-client {
-        margin: 60px;
-    }
+
     .client {
         display: flex;
         flex-direction: column;
@@ -84,8 +79,8 @@
         display: flex;
         
     }
-    .menu-client-active {
-        margin: 20px;
+    .user-info-active {
+        display: block!important;
     }
     .header-active {
         height: auto;
@@ -95,8 +90,14 @@
     .burger-container-inactive {
         display: none;
     }
-    .menu-client-inactive {
+    .user-info {
         display: none;
+    }
+    .user-info-active a {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }
     .nav-ul-active {
         display: flex;
@@ -108,7 +109,11 @@
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-    }    
+    }
+    .games-container {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 650px) {

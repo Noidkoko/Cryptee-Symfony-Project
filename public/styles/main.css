@@ -58,9 +58,6 @@ header .fa-icon {
     display: none;
     transition: .5s;
 }
-header .account-buttons {
-        margin-left: 130px;
-}
 .account-buttons {
     display: flex;
 }
@@ -74,7 +71,6 @@ header .nav-ul, header h1, header .account-buttons {
     color: var(--font-color);
 }
 .nav-ul {
-    margin-right: 40px;
     font-family: var(--ff-primary);
     display: flex;
 }
@@ -253,7 +249,7 @@ main {
 .user-info a {
     display: flex;
 }
-.user-info img {
+.client img {
     border-radius: 50%;
     width: 50px;
 }
@@ -288,8 +284,7 @@ main {
     border-radius: 20px;
 }
 .games-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
 }
 
 

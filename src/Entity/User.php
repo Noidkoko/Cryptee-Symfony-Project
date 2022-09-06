@@ -117,7 +117,11 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     public function getProfilpic(): ?string
     {
-        return $this->profilpic;
+        $profilpic = $this->profilpic;
+        // guarantee every user at least has ROLE_USER
+        $profilpic = 'default.png';
+
+        return $profilpic;
     }
 
     public function setProfilpic(string $profilpic): self
