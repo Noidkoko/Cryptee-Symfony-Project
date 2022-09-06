@@ -11,14 +11,14 @@ class Block {
     teleportIfOutOfMap() {
         const maxSize = GAME_SIZE / this.size
         if (this.x < 0) {
-            this.x = maxSize
+            snake.alive = false
         } else if (this.x > maxSize) {
-            this.x = 0
+            snake.alive = false
         }
         if (this.y < 0) {
-            this.y = maxSize
+            snake.alive = false
         } else if (this.y > maxSize) {
-            this.y = 0
+            snake.alive = false
         }
     }
 
