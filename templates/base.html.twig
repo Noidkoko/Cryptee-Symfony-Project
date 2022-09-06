@@ -17,7 +17,7 @@
                 {% if app.user %}
                 <div class="account-buttons"><a href="{{ path('logout') }} "><button>Deconnexion</button></a></div>
                 <div class="user-info">
-                    <a href="{{ path('account') }}" ><img src="" alt="pp"><h1>{{ app.user.username }}</h1></a>
+                    <a href="{{ path('account') }}" ><img src="../src/uploads/{{ app.user.profilpic }}" alt="pp"><h1>{{ app.user.username }}</h1></a>
                 </div>
                 {% else %}
                 <div class="account-buttons">
@@ -27,6 +27,7 @@
             </div>
             <h1>Creeptee</h1>
             {% endif %}
+                        </div>
             <nav class="nav-block">
                 <div class="burger-container"><a href='#' id="burger"><i class="fa-icon fa-3x fa-solid fa-caret-down"></i></a></div>
                 <ul class="nav-ul">

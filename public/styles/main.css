@@ -116,7 +116,6 @@ header .account-buttons button:hover {
     transition: .3s;
 }
 
-
 main {
     color: white;
     display: flex;
@@ -246,12 +245,17 @@ main {
     font-size: var(--font-L);
     margin: 30px;
     padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        flex-direction: column;
 }
-.user-info {
+.user-info a {
     display: flex;
 }
 .user-info img {
     border-radius: 50%;
+    width: 50px;
 }
 
 .menu-card {
@@ -295,13 +299,15 @@ main {
 }
 
 footer {
-    padding: 50px;
+    height: 15%;
     width: 100vw;
     font-size: var(--font-S);
     color: var(--font-color);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    bottom: 0;
     background-color: var(--main-color);
     clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
 }
