@@ -183,6 +183,11 @@ main {
     clip-path: polygon(0 0,100% 20%,100% 100%,0 100%);
 
 }
+.client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .feature2-home img {
     width: 20%;
     border-radius: 50%;
@@ -294,7 +299,6 @@ footer {
     width: 100vw;
     font-size: var(--font-S);
     color: var(--font-color);
-    padding: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
