@@ -15,7 +15,7 @@
             <div class="client">
                 <div class="menu-client"><a href='#'><i id="icon" class="fa-icon fa-2x fa-solid fa-user"></i><a/></div>
                 {% if app.user %}
-                <div class="account-buttons"><a href="{{ path('logout') }} "><button>Deconnexion</button></a></div>
+                <div class="account-buttons logout"><a href="{{ path('logout') }} "><button>Deconnexion</button></a></div>
                 <div class="user-info">
                     <a href="{{ path('account') }}" ><img src="../src/uploads/{{ app.user.profilpic }}" alt="pp"><h1>{{ app.user.username }}</h1></a>
                 </div>
@@ -33,7 +33,7 @@
                 <ul class="nav-ul">
                     <li><a href="{{ path('home') }} ">Accueil</a></li>
                     {% if app.user %}
-                    <li><a href="{{ path('game') }} ">Jeux</a></li>
+                    <li><a href="{{ path('games') }} ">Jeux</a></li>
                     {% endif %}
                     <li>Contact</li>
                     <li>Qui sommes-nous ?</li>

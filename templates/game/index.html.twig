@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello GameController!{% endblock %}
+{% block title %}Nos jeux{% endblock %}
 
 {% block content %}
 <div class="games-page">
@@ -8,11 +8,18 @@
     <h1 class="title">Jouez maintenant et remportez vos gains !</h1>
 
     <div class="games-container">
-        <div class="game-item"></div>
-        <div class="game-item"></div>
-        <div class="game-item"></div>
-        <div class="game-item"></div>
+        {% for game in games %}
+            <a href="{{ path('game', { 'slug' : game.slug } ) }}">
+                        <div class="game-item">
+                <h1>{{ game.name }}</h1>
+                <img class="thumbnail" src="{{ asset(game.thumbnail) }}" alt="game-picture">
+                <p class="desc">{{ game.description }}</p>
+            </div>
+            </a>
+        {% endfor %}
     </div>
-    
 </div>
 {% endblock %}
+
+
+

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Silkscreen&display=swap');
 
 :root {
-    --main-color: #2A2A3B;
+    --main-color: #2a2a3b;
     --second-color: #F09666;
     --font-color: #FFF;
     --button-color: #f09666;
@@ -53,6 +53,7 @@ header {
     background-color: var(--main-color);
     width: 100vw;
     z-index: 999;
+    padding: 40px;
 }
 header .fa-icon {
     display: none;
@@ -118,8 +119,24 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
+
+.account-buttons {
+    overflow-x: hidden;
+}
+
+.logout {
+    transform: translateY(-80px);
+    opacity: 0;
+    transition: .3s;
+}
+.client:hover .logout {
+    transform: translateY(0);
+    opacity: 100;
+    transition: .3s;
+}
+
+
 .overlay {
     width: 100vw;
     clip-path: polygon(0 0,100% 0,100% 90%,0 100%);
@@ -182,13 +199,14 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row-reverse;
 }
 .feature2-home img {
     width: 20%;
     border-radius: 50%;
 }
 .feature4-home {
-    height: 80vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
@@ -265,29 +283,55 @@ main {
     justify-content: space-around;
     height: 50%;
 }
-.games-page h1 {
-    margin: 40px;
+.games-page .title {
+    margin: 20px;
 }
 
 .games-page {
-    padding: 80px;
-    margin: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .game-item {
-    height: 400px;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.game-item .desc {
     width: 400px;
-    background-color: #333;
-    margin: 20px;
-    border-radius: 20px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+
+}
+.game-item .thumbnail {
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
+    filter: drop-shadow(0 0 5px rgba(51, 51, 51, 0.192));
+    transition: .7s;
+}
+.game-item:hover {
+    filter: drop-shadow(0 0 10px rgba(51, 51, 51, 0.151));
+    transition: .7s;
+    transform: translateY(5px) scale(1.05);
+}
+.game-item h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 111;
+    height: 7vh;
+    border-radius: 30px;
 }
 .games-container {
     display: flex;
 }
-
-
 .footer-container ul {
     display: flex;
     list-style-type: none;
