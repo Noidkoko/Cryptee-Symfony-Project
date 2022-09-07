@@ -30,7 +30,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(length: 255)]
     private ?string $email = null;
 
-    #[ORM\Column(length: 255)]
+    #[ORM\Column(length: 255, nullable: true)]
     private ?string $profilpic = null;
 
     public function getId(): ?int
@@ -117,14 +117,10 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     public function getProfilpic(): ?string
     {
-        $profilpic = $this->profilpic;
-        // guarantee every user at least has ROLE_USER
-        $profilpic = 'default.png';
-
-        return $profilpic;
+        return $this->profilpic;
     }
 
-    public function setProfilpic(string $profilpic): self
+    public function setProfilpic(?string $profilpic): self
     {
         $this->profilpic = $profilpic;
 
