@@ -85,6 +85,9 @@ header .nav-ul li, .footer-container ul li {
 header .account-buttons button {
     margin: 10px;
 }
+header .title-creeptee {
+    font-size: var(--font-XL);
+}
 
 header .account-buttons button {
     align-items: center;
@@ -151,6 +154,7 @@ main {
     display: grid;
     grid-template-columns: 70% 30%;
     align-items: center;
+    color: var(--font-color);
 }
 .hero-home .title h1 {
     font-size: 55px;
@@ -205,7 +209,7 @@ main {
     border-radius: 50%;
 }
 .feature4-home {
-    height: 100vh;
+    height: 60vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
@@ -337,7 +341,7 @@ main {
 }
 
 footer {
-    height: 15%;
+    height: 15vh;
     width: 100vw;
     font-size: var(--font-S);
     color: var(--font-color);
