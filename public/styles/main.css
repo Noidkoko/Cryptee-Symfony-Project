@@ -43,7 +43,7 @@ header, main, footer {
 }
 
 header {
-    height: 10vh;
+    height: 15vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -140,6 +140,7 @@ main {
 
 
 .overlay {
+    margin: -5px;
     width: 100vw;
     clip-path: polygon(0 0,100% 0,100% 90%,0 100%);
     background-color: var(--main-color);
@@ -167,9 +168,15 @@ main {
     font-size: var(--font-M)
 }
 .hero-home img {
+    margin-bottom: 100px;
     border-radius: 50%;
     width: 400px;
 }
+
+.hero-subtitle {
+    margin-left: 250px;
+}
+
 .feature-home, .feature2-home {
     width: 100vw;
     display: flex;
