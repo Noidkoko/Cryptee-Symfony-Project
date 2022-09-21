@@ -3,47 +3,45 @@
 {% block title %}Welcome to Creeptee{% endblock %}
 
 {% block content %}
-                <div class="overlay">
-                                <div class="hero-home">
-                    <div class="title">
-                    <h1>Play basics games, make bigger gains</h1>
-                    <p>Jouez et remportez de vrais gains, pas ceux qui font les mythos !</p>
-                    </div>
-                    <img src="{{ asset('src/icon/gaming-icon.gif') }}" alt="presentation">
+    <div data-scroll-container>
+        <div class="overlay">
+            <div class="hero-home">
+                <div class="title">
+                    <h1 data-scroll data-scroll-speed="6" data-scroll-direction="horizontal" data-scroll class="appear">Play basics games, make bigger gains</h1>
+                    <p data-scroll data-scroll-speed="-5" data-scroll-direction="horizontal" data-scroll class="appear">Jouez et remportez de vrais gains, pas ceux qui font les mythos !</p>
                 </div>
-                </div>
-                <div class="feature-home">
-
-                    <h1>Génerez des revenues en jouant à des jeux simples,
-                    augmenter vos gains avec des équipements à collectionner
-                    et devenez le meilleur parmis le classement mondial établi !</h1>
-
-                    <img src="{{ asset('src/icon/feature-icon.gif') }}" alt="presentation">
-                </div>
-                <div class="feature2-home">
-
-                    <img src="{{ asset('src/icon/buddy-icon.gif') }}" alt="presentation">
-
-                    <h1>Mesurez vous au reste des joueurs et partagez techniques et avis sur notre forum</h1>
-                </div>
-                <div class="feature4-home">
-                    <div class="testimonial-card">
-                        <img src="{{ asset('src/icon/testi1.gif') }}" alt="presentation">
-                        <h1>John Doe</h1>
-                        <div><span>💬</span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                         incididunt ut labore et dolore magna aliqua.</p></div>
-                    </div>
-                    <div class="testimonial-card">
-                        <img src="{{ asset('src/icon/testi2.gif') }}" alt="presentation">
-                        <h1>John Doe</h1>
-                        <div><span>💬</span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                         incididunt ut labore et dolore magna aliqua.</p></div>
-                    </div>
-                    <div class="testimonial-card">
-                        <img src="{{ asset('src/icon/testi3.gif') }}" alt="presentation">
-                        <h1>John Doe</h1>
-                        <div><span>💬</span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                         incididunt ut labore et dolore magna aliqua.</p></div>
-                    </div>
-                </div>
+                <img src="{{ asset('src/icon/gaming-icon.gif') }}" alt="presentation">
+            </div>
+        </div>
+        <div class="feature-home">
+            <h1>Génerez des revenues en jouant à des jeux simples,
+            augmenter vos gains avec des équipements à collectionner
+            et devenez le meilleur parmis le classement mondial établi !</h1>
+            <img src="{{ asset('src/icon/feature-icon.gif') }}" alt="presentation">
+        </div>
+        <div class="feature2-home">
+            <img src="{{ asset('src/icon/buddy-icon.gif') }}" alt="presentation">
+            <h1>Mesurez vous au reste des joueurs et partagez techniques et avis sur notre forum</h1>
+        </div>
+        <div class="feature4-home">
+            <div class="testimonial-card">
+                <img src="{{ asset('src/icon/testi1.gif') }}" alt="presentation">
+                <h1>John Doe</h1>
+                <div><span>💬</span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</p></div>
+            </div>
+            <div class="testimonial-card">
+                <img src="{{ asset('src/icon/testi2.gif') }}" alt="presentation">
+                <h1>John Doe</h1>
+                <div><span>💬</span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</p></div>
+            </div>
+            <div class="testimonial-card">
+                <img src="{{ asset('src/icon/testi3.gif') }}" alt="presentation">
+                <h1>John Doe</h1>
+                <div><span>💬</span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</p></div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
